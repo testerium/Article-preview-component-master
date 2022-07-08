@@ -180,8 +180,9 @@ body {
             &.active {
                 display: flex;
                 width: 327px;
-                top: 402px;
+                top: unset;
                 left: 0;
+                bottom: 0;
             }
 
             :after {
