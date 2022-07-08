@@ -170,7 +170,7 @@ body {
 @media screen and (max-width: 767px) {
     .container {
         width: 327px;
-        height: 512px;
+        height: fit-content;
         flex-direction: column;
 
         .container_share {
@@ -197,7 +197,7 @@ body {
         }
 
         .text {
-            margin: 36px 32px;
+            margin: 31px 32px 20px 32px;
 
             h1 {
                 font-size: 16px;
