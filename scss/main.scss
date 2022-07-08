@@ -111,41 +111,40 @@ body {
         }
     }
 
-}
-
-.container_share {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    width: 248px;
-    background-color: $Very_Dark_Grayish_Blue;
-    padding: 18px 37px;
-    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
-    border-radius: 10px;
-    margin-top: 50px;
-    position: absolute;
-    top: 78px;
-    left: 550px;
-
-    &.active {
-        display: flex;
-    }
-
-    :after {
-        content: '';
-        width: 0;
-        height: 0;
-        border-color: $Very_Dark_Grayish_Blue transparent;
+    .container_share {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 248px;
+        background-color: $Very_Dark_Grayish_Blue;
+        padding: 18px 37px;
+        box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+        border-radius: 10px;
+        margin-top: 50px;
         position: absolute;
-        bottom: -11px;
-        left: 112px;
-        border-width: 12px 12px 0 12px;
-        border-style: solid;
-        display: block;
-    }
+        top: 78px;
+        left: 550px;
 
-    .icon_media:hover {
-        cursor: pointer;
+        &.active {
+            display: flex;
+        }
+
+        :after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-color: $Very_Dark_Grayish_Blue transparent;
+            position: absolute;
+            bottom: -11px;
+            left: 112px;
+            border-width: 12px 12px 0 12px;
+            border-style: solid;
+            display: block;
+        }
+
+        .icon_media:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -174,6 +173,22 @@ body {
         height: 512px;
         flex-direction: column;
 
+        .container_share {
+            width: 327px;
+            border-radius: 0px 0px 10px 10px;
+
+            &.active {
+                display: flex;
+                width: 327px;
+                top: 402px;
+                left: 0;
+            }
+
+            :after {
+                display: none;
+            }
+        }
+
         .image img {
             width: 327px;
             height: 200px;
@@ -194,18 +209,4 @@ body {
             }
         }
     }
-
-    .container_share {
-        width: 327px;
-        top: 50%;
-        left: 50%;
-        border-radius: 0px 0px 10px 10px;
-        transform: translate(-50%, 237%);
-
-        :after {
-            display: none;
-        }
-
-    }
-
 }
